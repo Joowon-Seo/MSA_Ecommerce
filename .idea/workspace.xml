@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee64bbf-7747-412a-83ca-6591e8b242c5" name="변경" comment="#제목: 구현한 기능&#10;#본문: 코드 의도 설명 가능한 자세하게&#10;&#10;# Feat     : 새로운 기능 추가&#10;# Fix      : 버그 수정&#10;# Docs     : 문서 수정&#10;# Test     : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링, 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우, 파일을 삭제하는 작업만 수행한 경우&#10;# Design   : CSS 및 레이아웃 작업&#10;# Chore    : 코드 외 빌드 부분 혹은 패키지 매니저 수정사항">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +89,7 @@
       <workItem from="1697898343138" duration="731000" />
       <workItem from="1697940131174" duration="2307000" />
       <workItem from="1697973633557" duration="1263000" />
+      <workItem from="1698037355970" duration="1253000" />
     </task>
     <servers />
   </component>

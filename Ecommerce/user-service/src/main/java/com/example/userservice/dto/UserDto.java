@@ -1,6 +1,8 @@
 package com.example.userservice.dto;
 
+import com.example.userservice.vo.ResponseOrder;
 import java.time.LocalDateTime;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -20,4 +22,6 @@ public class UserDto {
 	private LocalDateTime createdAt;
 
 	private String encryptedPassword;
+
+	private List<ResponseOrder> orders;
 }

@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee64bbf-7747-412a-83ca-6591e8b242c5" name="변경" comment="#제목: 구현한 기능&#10;#본문: 코드 의도 설명 가능한 자세하게&#10;&#10;# Feat     : 새로운 기능 추가&#10;# Fix      : 버그 수정&#10;# Docs     : 문서 수정&#10;# Test     : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링, 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우, 파일을 삭제하는 작업만 수행한 경우&#10;# Design   : CSS 및 레이아웃 작업&#10;# Chore    : 코드 외 빌드 부분 혹은 패키지 매니저 수정사항">
-      <change beforePath="$PROJECT_DIR$/Ecommerce/apigateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/apigateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/8.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/discovery-service/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/first-service/src/main/java/com/example/firstservice/FirstServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/first-service/src/main/java/com/example/firstservice/FirstServiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/first-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/first-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/second-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/second-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,6 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Ecommerce/discovery-service/src/main/java/com/example/discoveryservice/DiscoveryServiceApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ecommerce/discovery-service/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -60,10 +63,26 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Portfolio/MSA_Ecommerce/Ecommerce/apigateway-service&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Portfolio/MSA_Ecommerce&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;c92d2260f535483d0dc843a9d64903fd&quot;
   }
 }</component>
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+    <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="discovery-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.discoveryservice.DiscoveryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="user-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -74,11 +93,25 @@
       <updated>1697523513403</updated>
       <workItem from="1697523514518" duration="2377000" />
       <workItem from="1697585607976" duration="1202000" />
-      <workItem from="1697593556462" duration="3347000" />
+      <workItem from="1697593556462" duration="3421000" />
+      <workItem from="1697898343138" duration="731000" />
+      <workItem from="1697940131174" duration="2307000" />
+      <workItem from="1697973633557" duration="1263000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

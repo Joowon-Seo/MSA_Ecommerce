@@ -4,8 +4,13 @@ import com.example.userservice.dto.UserDto;
 import com.example.userservice.service.CustomUserDetailService;
 import com.example.userservice.vo.RequestLogin;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import java.io.IOException;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -16,15 +21,15 @@ import org.springframework.core.env.Environment;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Slf4j
 @RequiredArgsConstructor
 public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 
-	private CustomUserDetailService customUserDetailService;
-	private Environment env;
+	private final CustomUserDetailService customUserDetailService;
+	private final CustomAuthenticationManager authenticationManager;
+	private final Environment env;
 
 	@Override
 	public Authentication attemptAuthentication(HttpServletRequest request,
@@ -49,7 +54,17 @@ public class AuthenticationFilter extends UsernamePasswordAuthenticationFilter {
 	protected void successfulAuthentication(HttpServletRequest request,
 			HttpServletResponse response, FilterChain chain, Authentication authResult)
 			throws IOException, ServletException{
-		String userName = ((User)authResult.getPrincipal()).getUsername();
+		String userName = authResult.getName();
 		UserDto userDetails = customUserDetailService.getUserDetailsByEmail(userName);
+		log.debug("userDetails : {}", userDetails);
+
+		String token = Jwts.builder()
+				.setSubject(userDetails.getUserId())
+				.setExpiration(new Date(System.currentTimeMillis() + Long.parseLong(env.getProperty("token.expiration_time"))))
+				.signWith(SignatureAlgorithm.HS512, env.getProperty("token.secret"))
+				.compact();
+
+		response.addHeader("token", token);
+		response.addHeader("userId", userDetails.getUserId());
 	}
 }

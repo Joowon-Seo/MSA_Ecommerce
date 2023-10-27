@@ -1,8 +1,10 @@
 package com.example.userservice.security;
 
+import com.example.userservice.service.CustomUserDetailService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
@@ -11,6 +13,9 @@ import org.springframework.security.web.SecurityFilterChain;
 public class WebSecurity {
 
 	private final CustomAuthenticationManager CustomAuthenticationManager;
+	private final CustomUserDetailService customUserDetailService;
+	private final Environment env;
+
 
 	@Bean
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
@@ -27,7 +32,7 @@ public class WebSecurity {
 
 	@Bean
 	public AuthenticationFilter getAuthenticationFilter() {
-		AuthenticationFilter authenticationFilter = new AuthenticationFilter();
+		AuthenticationFilter authenticationFilter = new AuthenticationFilter(customUserDetailService, CustomAuthenticationManager, env);
 		authenticationFilter.setAuthenticationManager(CustomAuthenticationManager);
 
 		return authenticationFilter;

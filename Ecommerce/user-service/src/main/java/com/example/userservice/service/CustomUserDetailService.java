@@ -5,6 +5,8 @@ import com.example.userservice.repository.UserEntity;
 import com.example.userservice.repository.UserRepository;
 import java.util.ArrayList;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.modelmapper.ModelMapper;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class CustomUserDetailService implements UserDetailsService {
 
 	private final UserRepository userRepository;
@@ -29,7 +32,11 @@ public class CustomUserDetailService implements UserDetailsService {
 				true, true, true, true, new ArrayList<>());
 	}
 
-	public UserDto getUserDetailsByEmail(String userName){
-		return null;
+	public UserDto getUserDetailsByEmail(String email){
+		UserEntity userEntity = userRepository.findByEmail(email);
+
+		UserDto userDto = new ModelMapper().map(userEntity, UserDto.class);
+		log.debug("userDto : {}", userDto);
+		return userDto;
 	}
 }

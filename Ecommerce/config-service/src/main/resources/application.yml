@@ -8,4 +8,5 @@ spring:
     config:
       server:
         git:
-          uri: file://C:\Portfolio\git-rocal-repo
+          uri: https://github.com/Joowon-Seo/Spring-Cloud-Config-Of-MSA_Ecommerce
+#          uri: file://C:\Portfolio\git-rocal-repo

@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aee64bbf-7747-412a-83ca-6591e8b242c5" name="변경" comment="#제목: 구현한 기능&#10;#본문: 코드 의도 설명 가능한 자세하게&#10;&#10;# Feat     : 새로운 기능 추가&#10;# Fix      : 버그 수정&#10;# Docs     : 문서 수정&#10;# Test     : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링, 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우, 파일을 삭제하는 작업만 수행한 경우&#10;# Design   : CSS 및 레이아웃 작업&#10;# Chore    : 코드 외 빌드 부분 혹은 패키지 매니저 수정사항">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/security/WebSecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/security/WebSecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="aee64bbf-7747-412a-83ca-6591e8b242c5" name="변경" comment="#제목: 구현한 기능&#10;#본문: 코드 의도 설명 가능한 자세하게&#10;&#10;# Feat     : 새로운 기능 추가&#10;# Fix      : 버그 수정&#10;# Docs     : 문서 수정&#10;# Test     : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링, 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우, 파일을 삭제하는 작업만 수행한 경우&#10;# Design   : CSS 및 레이아웃 작업&#10;# Chore    : 코드 외 빌드 부분 혹은 패키지 매니저 수정사항" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +92,7 @@
       <workItem from="1698221263055" duration="1235000" />
       <workItem from="1698293036441" duration="2971000" />
       <workItem from="1698390718226" duration="3070000" />
-      <workItem from="1698520118509" duration="18000" />
+      <workItem from="1698520118509" duration="221000" />
     </task>
     <servers />
   </component>

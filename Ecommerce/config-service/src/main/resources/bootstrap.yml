@@ -1,0 +1,6 @@
+encrypt:
+#  key: SMILE_MAN_MSA_ECOMMERCE
+  key-store:
+    location: file:///C:/Portfolio/keystore/apiEncryptionKey.jks
+    password: test1234
+    alias: apiEncryptionKey

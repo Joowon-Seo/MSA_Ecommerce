@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: config-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    stream:
+      username: guest
+      password: guest
   profiles:
     active: native
   cloud:
@@ -14,3 +20,8 @@ spring:
         git:
           uri: https://github.com/Joowon-Seo/Spring-Cloud-Config-Of-MSA_Ecommerce
 #          uri: file://C:\Portfolio\git-rocal-repo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh

@@ -55,6 +55,8 @@ public class AuthorizationHeaderFilter extends
 
 		String subject = null;
 
+		log.debug("token : {}", env.getProperty("token.secret"));
+
 		try {
 			subject = Jwts.parser().setSigningKey(env.getProperty("token.secret"))
 					.parseClaimsJws(jwt).getBody()

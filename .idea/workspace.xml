@@ -6,9 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="aee64bbf-7747-412a-83ca-6591e8b242c5" name="변경" comment="#제목: 구현한 기능&#10;#본문: 코드 의도 설명 가능한 자세하게&#10;&#10;# Feat     : 새로운 기능 추가&#10;# Fix      : 버그 수정&#10;# Docs     : 문서 수정&#10;# Test     : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링, 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우, 파일을 삭제하는 작업만 수행한 경우&#10;# Design   : CSS 및 레이아웃 작업&#10;# Chore    : 코드 외 빌드 부분 혹은 패키지 매니저 수정사항">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/apigateway-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/apigateway-service/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/order-service/src/main/java/com/example/orderservice/repository/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/order-service/src/main/java/com/example/orderservice/repository/OrderEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/order-service/src/main/java/com/example/orderservice/vo/ResponseOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/order-service/src/main/java/com/example/orderservice/vo/ResponseOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,16 +51,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Portfolio/MSA_Ecommerce&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;66cf081e9db694427514830c58c280ce&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Portfolio/MSA_Ecommerce",
+    "spring.configuration.checksum": "c92d2260f535483d0dc843a9d64903fd"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="discovery-service.main" />
@@ -100,7 +101,9 @@
       <workItem from="1698520118509" duration="221000" />
       <workItem from="1698567134464" duration="2708000" />
       <workItem from="1698654749407" duration="28000" />
-      <workItem from="1698654790993" duration="1907000" />
+      <workItem from="1698654790993" duration="2141000" />
+      <workItem from="1698750441269" duration="596000" />
+      <workItem from="1698759623928" duration="593000" />
     </task>
     <servers />
   </component>

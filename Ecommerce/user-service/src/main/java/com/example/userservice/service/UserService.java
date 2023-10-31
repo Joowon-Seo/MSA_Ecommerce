@@ -1,5 +1,6 @@
 package com.example.userservice.service;
 
+import com.example.userservice.client.OrderServiceClient;
 import com.example.userservice.dto.UserDto;
 import com.example.userservice.repository.UserEntity;
 import com.example.userservice.repository.UserRepository;
@@ -25,6 +26,7 @@ public class UserService {
 	private final BCryptPasswordEncoder bCryptPasswordEncoder;
 	private final RestTemplate restTemplate;
 	private final Environment env;
+	private final OrderServiceClient orderServiceClient;
 
 	public UserDto createUser(UserDto userDto) {
 		userDto.setUserId(UUID.randomUUID().toString());
@@ -49,13 +51,17 @@ public class UserService {
 		/**
 		 * Using as RestTemplate
 		 */
-		String orderUrl = String.format(env.getProperty("order_service.url"), userId);
-		ResponseEntity<List<ResponseOrder>> orderListResponse =
-				restTemplate.exchange(orderUrl, HttpMethod.GET, null,
-					new ParameterizedTypeReference<List<ResponseOrder>>() {
-				});
-		List<ResponseOrder> orderList = orderListResponse.getBody();
+//		String orderUrl = String.format(env.getProperty("order_service.url"), userId);
+//		ResponseEntity<List<ResponseOrder>> orderListResponse =
+//				restTemplate.exchange(orderUrl, HttpMethod.GET, null,
+//					new ParameterizedTypeReference<List<ResponseOrder>>() {
+//				});
+//		List<ResponseOrder> orderList = orderListResponse.getBody();
 
+		/**
+		 * Using a FeignClient
+		 */
+		List<ResponseOrder> orderList = orderServiceClient.getOrders(userId);
 
 		userDto.setOrders(orderList);
 

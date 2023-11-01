@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface OrderServiceClient {
 
 	@GetMapping("/order-service/{userId}/orders")
-	public List<ResponseOrder> getOrders(@PathVariable String userId);
+	List<ResponseOrder> getOrders(@PathVariable String userId);
 }

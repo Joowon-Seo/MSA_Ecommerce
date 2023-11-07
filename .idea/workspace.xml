@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee64bbf-7747-412a-83ca-6591e8b242c5" name="변경" comment="#제목: 구현한 기능&#10;#본문: 코드 의도 설명 가능한 자세하게&#10;&#10;# Feat     : 새로운 기능 추가&#10;# Fix      : 버그 수정&#10;# Docs     : 문서 수정&#10;# Test     : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링, 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우, 파일을 삭제하는 작업만 수행한 경우&#10;# Design   : CSS 및 레이아웃 작업&#10;# Chore    : 코드 외 빌드 부분 혹은 패키지 매니저 수정사항">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/client/OrderServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/client/OrderServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/order-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/order-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/product-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/product-service/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/.idea/.gitignore" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Ecommerce/discovery-service/build.gradle" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ecommerce/discovery-service/src/main/java/com/example/discoveryservice/DiscoveryServiceApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Ecommerce/discovery-service/src/main/resources/application.yml" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -57,8 +58,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Portfolio/MSA_Ecommerce",
-    "spring.configuration.checksum": "66cf081e9db694427514830c58c280ce"
+    "last_opened_file_path": "C:/zerobase/part-02.-자료구조-알고리즘-마종현-강사님/제로베이스_백엔드 스쿨-Chapter 03. 비선형자료구조 교안-코드-20220502T073821Z-001/제로베이스_백엔드 스쿨-Chapter 03. 비선형자료구조 교안-코드/_비선형 자료구조 code",
+    "spring.configuration.checksum": "c92d2260f535483d0dc843a9d64903fd"
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.UserServiceApplication">
@@ -105,7 +106,13 @@
       <workItem from="1698750441269" duration="596000" />
       <workItem from="1698759623928" duration="2539000" />
       <workItem from="1698870963889" duration="25000" />
-      <workItem from="1698871004155" duration="595000" />
+      <workItem from="1698871004155" duration="1266000" />
+      <workItem from="1699093962778" duration="698000" />
+      <workItem from="1699182086490" duration="1017000" />
+      <workItem from="1699184576297" duration="598000" />
+      <workItem from="1699277421856" duration="8000" />
+      <workItem from="1699302310466" duration="62000" />
+      <workItem from="1699302390338" duration="601000" />
     </task>
     <servers />
   </component>

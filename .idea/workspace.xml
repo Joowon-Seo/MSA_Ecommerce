@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee64bbf-7747-412a-83ca-6591e8b242c5" name="변경" comment="#제목: 구현한 기능&#10;#본문: 코드 의도 설명 가능한 자세하게&#10;&#10;# Feat     : 새로운 기능 추가&#10;# Fix      : 버그 수정&#10;# Docs     : 문서 수정&#10;# Test     : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링, 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우, 파일을 삭제하는 작업만 수행한 경우&#10;# Design   : CSS 및 레이아웃 작업&#10;# Chore    : 코드 외 빌드 부분 혹은 패키지 매니저 수정사항">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/order-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/order-service/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ecommerce/product-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/product-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/order-service/src/main/java/com/example/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/order-service/src/main/java/com/example/orderservice/controller/OrderController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,16 +51,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/zerobase/part-02.-자료구조-알고리즘-마종현-강사님/제로베이스_백엔드 스쿨-Chapter 03. 비선형자료구조 교안-코드-20220502T073821Z-001/제로베이스_백엔드 스쿨-Chapter 03. 비선형자료구조 교안-코드/_비선형 자료구조 code",
-    "spring.configuration.checksum": "c92d2260f535483d0dc843a9d64903fd"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/zerobase/part-02.-자료구조-알고리즘-마종현-강사님/제로베이스_백엔드 스쿨-Chapter 03. 비선형자료구조 교안-코드-20220502T073821Z-001/제로베이스_백엔드 스쿨-Chapter 03. 비선형자료구조 교안-코드/_비선형 자료구조 code&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c92d2260f535483d0dc843a9d64903fd&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="discovery-service.main" />
@@ -113,6 +112,7 @@
       <workItem from="1699277421856" duration="8000" />
       <workItem from="1699302310466" duration="62000" />
       <workItem from="1699302390338" duration="601000" />
+      <workItem from="1699357132097" duration="1229000" />
     </task>
     <servers />
   </component>

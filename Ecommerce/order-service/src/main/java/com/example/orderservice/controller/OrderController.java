@@ -2,12 +2,14 @@ package com.example.orderservice.controller;
 
 import com.example.orderservice.dto.OrderDto;
 import com.example.orderservice.messagequeue.KafkaProducer;
+import com.example.orderservice.messagequeue.OrderProducer;
 import com.example.orderservice.repository.OrderEntity;
 import com.example.orderservice.service.OrderService;
 import com.example.orderservice.vo.RequestOrder;
 import com.example.orderservice.vo.ResponseOrder;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
@@ -29,6 +31,7 @@ public class OrderController {
 	private final OrderService orderService;
 	private final Environment env;
 	private final KafkaProducer kafkaProducer;
+	private final OrderProducer orderProducer;
 
 	@GetMapping("/health-check")
 	public String status() {
@@ -42,19 +45,30 @@ public class OrderController {
 		ModelMapper mapper = new ModelMapper();
 		mapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
 
+
+		OrderDto orderDto = mapper.map(order, OrderDto.class);
+		orderDto.setUserId(userId);
+
 		/**
 		 * jpa
 		 */
-		OrderDto orderDto = mapper.map(order, OrderDto.class);
-		orderDto.setUserId(userId);
-		OrderDto createdOrder = orderService.createOrder(orderDto);
+//		OrderDto createdOrder = orderService.createOrder(orderDto);
+//		ResponseOrder responseOrder = mapper.map(createdOrder, ResponseOrder.class);
 
-		ResponseOrder responseOrder = mapper.map(createdOrder, ResponseOrder.class);
+		/**
+		 * Kafka
+		 */
+		orderDto.setOrderId(UUID.randomUUID().toString());
+		orderDto.setTotalPrice(order.getUnitPrice() * order.getQuantity());
+
 
 		/**
 		 * send this order to the kafka
 		 */
+		ResponseOrder responseOrder = mapper.map(orderDto, ResponseOrder.class);
+
 		kafkaProducer.send("example-product-topic", orderDto);
+		orderProducer.send("orders", orderDto);
 
 		return ResponseEntity.status(HttpStatus.CREATED).body(responseOrder);
 	}

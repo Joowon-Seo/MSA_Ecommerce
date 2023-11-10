@@ -6,12 +6,15 @@ import com.example.userservice.repository.UserEntity;
 import com.example.userservice.repository.UserRepository;
 import com.example.userservice.vo.ResponseOrder;
 import feign.FeignException.FeignClientException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
+import org.springframework.cloud.client.circuitbreaker.CircuitBreaker;
+import org.springframework.cloud.client.circuitbreaker.CircuitBreakerFactory;
 import org.springframework.core.env.Environment;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -27,6 +30,7 @@ public class UserService {
 	private final RestTemplate restTemplate;
 	private final Environment env;
 	private final OrderServiceClient orderServiceClient;
+	private final CircuitBreakerFactory circuitBreakerFactory;
 
 	public UserDto createUser(UserDto userDto) {
 		userDto.setUserId(UUID.randomUUID().toString());
@@ -71,7 +75,15 @@ public class UserService {
 //			log.error(ex.getMessage());
 //		}
 
-		List<ResponseOrder> orderList = orderServiceClient.getOrders(userId);
+		/**
+		 * ErrorDecoder
+		 */
+//		List<ResponseOrder> orderList = orderServiceClient.getOrders(userId);
+
+		CircuitBreaker circuitBreaker = circuitBreakerFactory.create("circuitBreaker");
+		List<ResponseOrder> orderList = circuitBreaker.run(() -> orderServiceClient.getOrders(userId),
+				throwable -> new ArrayList<>());
+
 		userDto.setOrders(orderList);
 
 		return userDto;

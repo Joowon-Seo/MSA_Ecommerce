@@ -15,12 +15,12 @@ spring:
     hibernate:
       ddl-auto: update
   datasource:
-#    driver-class-name: org.h2.Driver
-#    url: jdbc:h2:mem:test
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mydb
-    username: root
-    password: rjswm147
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/mydb
+#    username: root
+#    password: rjswm147
   sql:
     init:
       mode: always

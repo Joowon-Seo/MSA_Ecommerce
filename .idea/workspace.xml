@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee64bbf-7747-412a-83ca-6591e8b242c5" name="변경" comment="#제목: 구현한 기능&#10;#본문: 코드 의도 설명 가능한 자세하게&#10;&#10;# Feat     : 새로운 기능 추가&#10;# Fix      : 버그 수정&#10;# Docs     : 문서 수정&#10;# Test     : 테스트 코드 추가&#10;# Refactor : 코드 리팩토링, 파일 혹은 폴더명을 수정하거나 옮기는 작업만인 경우, 파일을 삭제하는 작업만 수행한 경우&#10;# Design   : CSS 및 레이아웃 작업&#10;# Chore    : 코드 외 빌드 부분 혹은 패키지 매니저 수정사항">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/order-service/src/main/java/com/example/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/order-service/src/main/java/com/example/orderservice/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ecommerce/order-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/order-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Ecommerce/user-service/src/main/java/com/example/userservice/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +117,10 @@
       <workItem from="1699302390338" duration="601000" />
       <workItem from="1699357132097" duration="2480000" />
       <workItem from="1699453506425" duration="61000" />
-      <workItem from="1699453585465" duration="595000" />
+      <workItem from="1699453585465" duration="1882000" />
+      <workItem from="1699538256672" duration="663000" />
+      <workItem from="1699595816973" duration="48000" />
+      <workItem from="1699595882205" duration="611000" />
     </task>
     <servers />
   </component>
